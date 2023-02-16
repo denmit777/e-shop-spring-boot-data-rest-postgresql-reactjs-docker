@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>https://www.online-shop.com</title>
+    </head>
+    <body>
+        <h2>Dear Admins,</h2>
+        <h3>The feedback was provided on the order
+            <span th:text="${orderId}"></span>
+            by <span th:text="${login}"></span>. It includes:
+        </h3>
+        <h4>Rate: <span th:text="${feedbackRate}"></span><br/>
+            <span th:text="${feedbackComment}"></span>
+        </h4>
+    </body>
+</html>

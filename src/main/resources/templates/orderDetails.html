@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>https://www.online-shop.com</title>
+    </head>
+    <body>
+        <h2>Dear <span th:text="${login}"></span>!</h2>
+        <h3><span th:text="${header}"></span> Order <span th:text="${orderId}"></span>
+            was placed successfully. It includes:
+            <pre th:text="${order}"></pre><br/>
+            <span th:text="${footer}"></span>
+        </h3>
+    </body>
+</html>
+

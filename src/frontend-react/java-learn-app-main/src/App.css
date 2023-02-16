@@ -1,0 +1,288 @@
+.container {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-container {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__title-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.container__from-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.container__inputs-wrapper {
+    display: flex;
+}
+
+.form__input-wrapper {
+    margin: 20px;
+}
+
+.container__button-wrapper {
+    display: flex;
+    margin: auto;
+    padding: 1% 1% 0 1%;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%;
+}
+
+.table-container {
+    padding: 5% 5% 0 5%;
+}
+
+.inputs-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.submit-button-section {
+    margin: auto;
+    display: flex;
+    width: 450px;
+    justify-content: space-around;
+}
+
+.input {
+	width: 200px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+    background-color: #afeeee;
+	border-radius: 8px;
+}
+
+.button {
+    padding: 12px 48px;
+    border-radius: 24px;
+    background-color: #0076ff;
+    box-shadow: 0px 4px 10px rgba(135, 167, 171, 0.5);
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
+    outline: none;
+    cursor: pointer;
+}
+
+.table {
+    align: center;
+    margin-bottom: 20px;
+    border: 15px solid #F2F8F8;
+    border-top: 5px solid #F2F8F8;
+    border-collapse: collapse;
+    width: 30%;
+    margin:0 auto;
+}
+
+.td {
+	padding: 5px;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+}
+
+.centered {
+    text-align: center;
+}
+
+.select {
+    margin: 0 20px 0 20px;
+    border-radius: .5em;
+    background-color: #fff;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+}
+
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: #CDD1DA;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+
+.checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+
+.checkbox:checked + label:before {
+	background: #9FD468;
+}
+
+.checkbox:checked + label:after {
+	left: 26px;
+}
+
+.checkbox:focus + label:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+
+.has-error {
+    color: red;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.up-arrow {
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  background: transparent;
+  border-bottom: solid 7px black;
+  border-top-width: 0;
+  cursor: pointer;
+  margin-left: 110px;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  background: transparent;
+  border-top: solid 7px black;
+  border-bottom-width: 0;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 110px;
+}
+
+.field {
+  margin-left: 75px;
+  float: center;
+  position: absolute;
+}
+
+.box {
+   height: 5px;
+   width: 100px;
+}
+
+.box:hover {
+   background-color: lightblue;
+}
+
+.order-data-container__enter-comment-section {
+  margin: 30px 0 50px 6%;
+}
+
+.comment-text-field {
+  width: 600px;
+}
+
+.enter-comment-section__add-comment-button {
+  margin-top: 20px;
+}
+
+.order-data-container__button-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 50px 6%;
+  width: 600px;
+}
+
+.creation-text-field_width680 {
+  width: 680px;
+}
+
+.order-creation-form-container__navigation-container {
+  margin: 30px 30px;
+}
+
+.inputs-section-for-feedback {
+  display: flex;
+  justify-content: center;
+  margin: 330px 0;
+}
+
+.feedback-rate {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.feedback-rate button {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20%;
+  margin: 20px;
+}
+
+.allFeedbacks {
+  display: flex;
+}
+
+.allFeedbacks div {
+  display: flex;
+  margin-right: 105px;
+}
+
+.submit-button-from-feedbackpage {
+  color: white;
+  font-size: 24px bold;
+  background-color: blue;
+  padding: 25px;
+  margin: 25px;
+  max-width: 110px;
+  max-height: 25px;
+}
+
+
+
+
+

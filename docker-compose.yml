@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  app:
+    container_name: app
+    build: .
+    ports: [ "8081:8081" ]
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/dbase
+      - SPRING_DATASOURCE_USERNAME=denmit
+      - SPRING_DATASOURCE_PASSWORD=1981
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+  db:
+    image: 'postgres:13.1-alpine'
+    container_name: db
+    ports: [ "5432:5432" ]
+    environment:
+      - POSTGRES_PASSWORD=1981
+      - POSTGRES_USER=denmit
+      - POSTGRES_DB=dbase
+
